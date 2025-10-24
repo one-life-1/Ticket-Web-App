@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Management | TicketForge</title>
+  <link rel="stylesheet" href="Ticket Management.css" />
+  <script src="Ticket Management.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="Dashboard-header">
+    <div class="container">
+      <h1 class="logo">TicketForge</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" class="active">Tickets</a>
+        <button id="logoutBtn" class="btn logout">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <h2>Ticket Management</h2>
+    <p class="subtitle">Create, edit, and track all your tickets easily.</p>
+
+    <!-- Ticket Form -->
+    <form id="ticketForm" class="ticket-form">
+      <input type="hidden" id="editIndex" value="" />
+      <div class="form-group">
+        <label for="title">Title <span style="color:red">*</span></label>
+        <input type="text" id="title" placeholder="Enter ticket title" required />
+        <div id="titleError" class="error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status <span style="color:red">*</span></label>
+        <select id="status" required>
+          <option value="">Select status</option>
+          <option value="open">Open</option>
+          <option value="in_progress">In Progress</option>
+          <option value="closed">Closed</option>
+        </select>
+        <div id="statusError" class="error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Enter description (optional)" rows="3"></textarea>
+      </div>
+
+      <button type="submit" id="saveBtn">Add Ticket</button>
+    </form>
+
+    <!-- Ticket List -->
+    <section id="ticketList" class="ticket-list"></section>
+  </main>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JS -->
+  <script src="ticket-management.js"></script>
+</body>
+</html>

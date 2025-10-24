@@ -1,0 +1,98 @@
+/* ============= AUTH PAGES ============= */
+.auth-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 1.9rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.error {
+  display: block;
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  min-height: 18px;
+}
+.btn.full {
+  width: 100%;
+  margin-top: 10px;
+}
+.switch-link {
+  margin-top: 18px;
+  color: #475569;
+}
+.switch-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* ============= TOAST/SNACKBAR ============= */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background: #334155;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
+}

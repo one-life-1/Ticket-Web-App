@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | TicketForge</title>
+  <link rel="stylesheet" href="login and signup.css">
+  <script defer src="auth.js"></script>
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <h1>Welcome Back 👋</h1>
+    <p class="subtitle">Log in to manage your tickets efficiently.</p>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" required>
+        <span class="error" id="loginEmailError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+        <span class="error" id="loginPasswordError"></span>
+      </div>
+
+      <button type="submit" class="btn primary full">Login</button>
+      <p class="switch-link">Don't have an account? <a href="signn.html">Sign up</a></p>
+    </form>
+  </div>
+
+  <div id="toast" class="toast"></div>
+</body>
+</html>

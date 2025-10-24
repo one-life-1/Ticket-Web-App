@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | TicketForge</title>
+    <link rel="stylesheet" href="Dashboard.css" />
+</head>
+
+<body class="dashboard-body">
+    <header class="dashboard-header">
+        <div class="container">
+            <h1 class="logo">🎟️ TicketForge</h1>
+            <nav>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="tickets.html">Manage Tickets</a>
+                <button id="logoutBtn" class="btn logout">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <h2>Dashboard Overview</h2>
+            <p class="subtitle">Here’s a quick snapshot of your ticket activity.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card open">
+                    <h3>Total Tickets</h3>
+                    <p id="totalTickets">0</p>
+                </div>
+
+                <div class="stat-card in-progress">
+                    <h3>Open Tickets</h3>
+                    <p id="openTickets">0</p>
+                </div>
+
+                <div class="stat-card closed">
+                    <h3>Resolved Tickets</h3>
+                    <p id="closedTickets">0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 TicketForge | Built with ❤️ by Your Team</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+</body>
+
+</html>
+    <script defer src="dashboard.js"></script>
