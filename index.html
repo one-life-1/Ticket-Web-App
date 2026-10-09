@@ -8,15 +8,15 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="top">
   <div class="container nav-container">
     <div class="logo">🎟️ TicketForge</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="loginn.html" class="btn">Login</a></li>
-        <li><a href="signn.html" class="btn primary">Get Started</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+        <li><a href="signup.html" class="btn primary">Get Started</a></li>
       </ul>
     </nav>
   </div>
@@ -28,8 +28,8 @@
       <h1>Transform Ticket Management with <span>TicketForge</span></h1>
       <p>Streamline your workflow and boost team productivity with a secure, elegant ticketing platform.</p>
       <div class="cta">
-        <a href="signn.html" class="btn primary">Start Free</a>
-        <a href="loginn.html" class="btn">Login</a>
+        <a href="signup.html" class="btn primary">Start Free</a>
+        <a href="login.html" class="btn">Login</a>
       </div>
     </div>
     <div class="image">
@@ -51,7 +51,7 @@
   </svg>
 </section>
 
-<section class="features">
+<section class="features" id="features">
   <div class="container">
     <h2>Empower Your Workflow</h2>
     <div class="feature-grid">
@@ -75,8 +75,6 @@
   <p>&copy; 2025 TicketForge — Built for innovators, by innovators.</p>
 </footer>
 
+<script>if(localStorage.getItem("ticketapp_session")){document.querySelectorAll('a[href="login.html"],a[href="signup.html"]').forEach(a=>{a.href="dashboard.html";a.textContent=a.classList.contains("primary")?"Go to Dashboard":"Dashboard";});}</script>
 </body>
 </html>
-
-
-<script src="Landing page.js"></script>
